@@ -13,10 +13,9 @@ Salir  """)).lower().strip()
     match acciones:
         case "agregar curso":
             cursos=agregarCursos()
+            print(cursos)
         case "agregar alumno":
-            idalumno=int(input("Dime el id del alumno"))
             nuevoAlumno= agregarAlumno()
-            cursos["nombre"]["alumnos"][idalumno]=nuevoAlumno
             print(nuevoAlumno)
 
 
